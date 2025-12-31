@@ -12,7 +12,7 @@ public class Main {
         addMovie.put(102, new Movie(102,"Parashakthi"));
         addMovie.put(103, new Movie( 103,"Mangatha"));
         while (true) {
-            System.out.println("-------------Booking---------------");
+            System.out.println("--------------Booking---------------");
             System.out.println("1.View Tickets");
             System.out.println("2.Exit");
             int choice = sc.nextInt();
