@@ -8,9 +8,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         HashMap<Integer, String> addUser = new HashMap<>();
         HashMap<Integer, Movie> addMovie = new HashMap<>();
-        addMovie.put(101,new Movie(101,"Jayanayagam"));
-        addMovie.put(102, new Movie(102,"Parashakthi"));
-        addMovie.put(103, new Movie( 103,"Mangatha"));
+        addMovie.put(101,new Movie(101,"Jana Nayagam"));
+        addMovie.put(102, new Movie(102,"Parasakthi"));
+        addMovie.put(103, new Movie( 103,"Magatha"));
         while (true) {
             System.out.println("--------------Booking---------------");
             System.out.println("1.View Tickets");
@@ -18,10 +18,16 @@ public class Main {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
+                    int count=1;
                     System.out.println("-----------Available Tickets-------------");
-                    for (int i:addMovie.keySet()) {
-                      //  Movie m=addMovie.get(key);
-                    //    System.out.println(addMovie.get(Key));
+                    for(Movie m:addMovie.values()){
+                        System.out.println(count +". " +m.getMovieId() +" Movie " + m.getMovieName());
+                   count++;
+                    }
+                    int choose=sc.nextInt();
+                    System.out.println("Enter Choice: ");
+                    if(choose==1){
+                        System.out.println();
                     }
             }
         }
